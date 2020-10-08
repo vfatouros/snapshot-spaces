@@ -21,7 +21,7 @@
     ["uniswap", {
       "address": "0xDf6b861B4FBCFaffb62dD1906fCd3a863955704b",
       "tokenAddress": "0x6e36556b3ee5aa28def2a8ec3dae30ec2b208739",
-      "symbol": "BUILD",
+      "symbol": "BUILD-ETH",
       "decimals": 18
     }]
   ]
