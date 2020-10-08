@@ -10,6 +10,19 @@
   "core": [
     "0x2Cb037BD6B7Fbd78f04756C99B7996F430c58172"
   ],
-  "min": 0,
-  "invalid": []
+  "min": 100,
+  "invalid": [],
+  "strategies": [
+    ["erc20-balance-of", {
+      "address": "0x6e36556b3ee5aa28def2a8ec3dae30ec2b208739",
+      "symbol": "BUILD",
+      "decimals": 18
+    }],
+    ["uniswap", {
+      "address": "0xDf6b861B4FBCFaffb62dD1906fCd3a863955704b",
+      "tokenAddress": "0x6e36556b3ee5aa28def2a8ec3dae30ec2b208739",
+      "symbol": "BUILD",
+      "decimals": 18
+    }]
+  ]
 }
