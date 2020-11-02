@@ -2,6 +2,7 @@
   "name": "BUILD Finance",
   "network": "1",
   "symbol": "BUILD",
+  "skin" : "build",
   "strategies": [
     {
       "name": "erc20-balance-of",
