@@ -1,28 +1,56 @@
 {
-  "key": "build",
   "name": "BUILD Finance",
-  "chainId": 1,
-  "decimals": 18,
+  "network": "1",
   "symbol": "BUILD",
-  "defaultView": "core",
-  "address": "0x6e36556b3ee5aa28def2a8ec3dae30ec2b208739",
-  "token": "0x6e36556b3ee5aa28def2a8ec3dae30ec2b208739",
-  "core": [
+  "strategies": [
+    {
+      "name": "erc20-balance-of",
+      "params": {
+        "address": "0x6e36556b3ee5aa28def2a8ec3dae30ec2b208739",
+        "symbol": "BUILD",
+        "decimals": 18
+      }
+    },
+    {
+      "name": "uniswap",
+      "params": {
+        "address": "0xDf6b861B4FBCFaffb62dD1906fCd3a863955704b",
+        "tokenAddress": "0x6e36556b3ee5aa28def2a8ec3dae30ec2b208739",
+        "symbol": "BUILD LP",
+        "decimals": 18
+      }
+    },
+    {
+      "name": "contract-call",
+      "params": {
+        "address": "0x859a9d0d8bBF57C390A0BD8Fb4f5DE617e1De535",
+        "decimals": 18,
+        "symbol": "BUILD Staked",
+        "methodABI": {
+          "constant": true,
+          "inputs": [{
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          }],
+          "name": "balanceOf",
+          "outputs": [{
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }],
+          "payable": false,
+          "stateMutability": "view",
+          "type": "function"
+        }
+      }
+    }
+  ],
+  "members": [
     "0x2Cb037BD6B7Fbd78f04756C99B7996F430c58172"
   ],
-  "min": 100,
-  "invalid": [],
-  "strategies": [
-    ["erc20-balance-of", {
-      "address": "0x6e36556b3ee5aa28def2a8ec3dae30ec2b208739",
-      "symbol": "BUILD",
-      "decimals": 18
-    }],
-    ["uniswap", {
-      "address": "0xDf6b861B4FBCFaffb62dD1906fCd3a863955704b",
-      "tokenAddress": "0x6e36556b3ee5aa28def2a8ec3dae30ec2b208739",
-      "symbol": "BUILD LP",
-      "decimals": 18
-    }]
-  ]
+  "filters": {
+    "defaultTab": "core",
+    "minScore": 0
+  }
 }
