@@ -1,7 +1,7 @@
 {
-  "name": "@snapshot-labs/snapshot-spaces",
+  "name": "@vfatouros/snapshot-spaces",
   "version": "0.1.0",
-  "repository": "snapshot-labs/snapshot-spaces",
+  "repository": "vfatouros/snapshot-spaces",
   "license": "MIT",
   "files": [
     "spaces",
