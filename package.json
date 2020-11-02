@@ -1,7 +1,7 @@
 {
-  "name": "@vfatouros/snapshot-spaces",
+  "name": "@build-finance/snapshot-spaces",
   "version": "0.1.0",
-  "repository": "vfatouros/snapshot-spaces",
+  "repository": "build-finance/snapshot-spaces",
   "license": "MIT",
   "files": [
     "spaces",
